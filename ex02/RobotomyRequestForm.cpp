@@ -6,7 +6,7 @@
 /*   By: mcharrad <mcharrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 10:02:54 by mcharrad          #+#    #+#             */
-/*   Updated: 2023/07/04 10:14:43 by mcharrad         ###   ########.fr       */
+/*   Updated: 2023/07/16 10:36:11 by mcharrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,9 @@ RobotomyRequestForm::RobotomyRequestForm(std::string target) : AForm("RobotomyRe
 {
 }
 
-void RobotomyRequestForm::beExecuted() const
+void RobotomyRequestForm::execute(Bureaucrat const & executor) const
 {
+    checkExecution(executor);
     std::cout << "* Torsional-axial chatter vibrations *" << std::endl;
     if (rand() > RAND_MAX / 2)
         std::cout << target << " has been robotomized successfully" << std::endl;

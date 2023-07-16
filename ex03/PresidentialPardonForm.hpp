@@ -6,7 +6,7 @@
 /*   By: mcharrad <mcharrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 10:12:41 by mcharrad          #+#    #+#             */
-/*   Updated: 2023/07/04 10:14:41 by mcharrad         ###   ########.fr       */
+/*   Updated: 2023/07/16 10:35:53 by mcharrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ public:
     PresidentialPardonForm(const PresidentialPardonForm &copy);
     PresidentialPardonForm &operator=(const PresidentialPardonForm &copy);
     PresidentialPardonForm(std::string target);
-    void beExecuted() const;
+    void execute(Bureaucrat const & executor) const;
 };

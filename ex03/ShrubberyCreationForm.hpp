@@ -6,7 +6,7 @@
 /*   By: mcharrad <mcharrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 09:41:13 by mcharrad          #+#    #+#             */
-/*   Updated: 2023/07/04 10:00:37 by mcharrad         ###   ########.fr       */
+/*   Updated: 2023/07/16 10:35:52 by mcharrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,5 @@ public:
     ShrubberyCreationForm(const ShrubberyCreationForm &copy);
     ShrubberyCreationForm &operator=(const ShrubberyCreationForm &copy);
     ShrubberyCreationForm(std::string target);
-    void beExecuted() const;
+    void execute(Bureaucrat const & executor) const;
 };

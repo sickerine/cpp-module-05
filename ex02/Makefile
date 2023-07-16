@@ -1,5 +1,5 @@
 CC = c++
-NAME = animal
+NAME = Forms
 FLAGS = -Wall -Werror -Wextra -std=c++98 
 FILES = main.cpp Bureaucrat.cpp AForm.cpp ShrubberyCreationForm.cpp RobotomyRequestForm.cpp PresidentialPardonForm.cpp 
 FILES_O = $(FILES:.cpp=.o)

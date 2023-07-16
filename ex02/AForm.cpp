@@ -6,7 +6,7 @@
 /*   By: mcharrad <mcharrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/22 11:08:37 by mcharrad          #+#    #+#             */
-/*   Updated: 2023/07/04 09:59:45 by mcharrad         ###   ########.fr       */
+/*   Updated: 2023/07/16 10:33:44 by mcharrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,13 +92,11 @@ const char * AForm::ExecuteException::what() const throw()
     return "Execute error";
 }
 
-void AForm::execute(const Bureaucrat & executor) const
+void AForm::checkExecution(const Bureaucrat & executor) const
 {
     if (executor.getGrade() > exec)
         throw GradeTooLowException();
     else if (!is_signed)
         throw FormNotSignedException();
-    else
-        beExecuted();
 }
 

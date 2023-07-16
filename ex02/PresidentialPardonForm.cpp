@@ -6,7 +6,7 @@
 /*   By: mcharrad <mcharrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 10:12:48 by mcharrad          #+#    #+#             */
-/*   Updated: 2023/07/04 10:14:39 by mcharrad         ###   ########.fr       */
+/*   Updated: 2023/07/16 10:36:17 by mcharrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,8 @@ PresidentialPardonForm::PresidentialPardonForm(std::string target) : AForm("Pres
 {
 }
 
-void PresidentialPardonForm::beExecuted() const
+void PresidentialPardonForm::execute(Bureaucrat const & executor) const
 {
+    checkExecution(executor);
     std::cout << target << " has been pardoned by Zaphod Beeblebrox" << std::endl;
 }

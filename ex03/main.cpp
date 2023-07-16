@@ -6,7 +6,7 @@
 /*   By: mcharrad <mcharrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 11:09:53 by mcharrad          #+#    #+#             */
-/*   Updated: 2023/07/04 10:59:28 by mcharrad         ###   ########.fr       */
+/*   Updated: 2023/07/16 10:53:07 by mcharrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,5 @@ int main()
 	bruh.executeForm(*ppf);
 
 	if (!fuck)
-		std::cout << "Fucked@" << std::endl;
-	
-
+		std::cout << "the form existnt" << std::endl;
 }

@@ -6,7 +6,7 @@
 /*   By: mcharrad <mcharrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 09:45:35 by mcharrad          #+#    #+#             */
-/*   Updated: 2023/07/04 10:00:02 by mcharrad         ###   ########.fr       */
+/*   Updated: 2023/07/16 10:36:26 by mcharrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,9 @@ ShrubberyCreationForm::ShrubberyCreationForm(std::string target) : AForm("Shrubb
 {
 }
 
-void ShrubberyCreationForm::beExecuted() const
+void ShrubberyCreationForm::execute(Bureaucrat const & executor) const
 {
+    checkExecution(executor);
     std::string filename = target + "_shrubbery";
     std::ofstream ofs(filename.c_str());
     if (!ofs)

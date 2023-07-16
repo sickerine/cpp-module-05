@@ -54,8 +54,8 @@ class AForm {
         const int & getExec() const;
         bool getSigned() const;
         void beSigned(const Bureaucrat & bureaucrat);
-        void execute(Bureaucrat const & executor) const;
-        virtual void beExecuted() const = 0;
+        virtual void execute(Bureaucrat const & executor) const = 0;
+        void checkExecution(Bureaucrat const & executor) const;
 };
 
 std::ostream &operator<<(std::ostream & stream, const AForm & obj);

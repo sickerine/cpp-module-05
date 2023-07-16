@@ -6,7 +6,7 @@
 /*   By: mcharrad <mcharrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 10:03:13 by mcharrad          #+#    #+#             */
-/*   Updated: 2023/07/04 10:14:44 by mcharrad         ###   ########.fr       */
+/*   Updated: 2023/07/16 10:35:52 by mcharrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,5 @@ public:
     RobotomyRequestForm(const RobotomyRequestForm &copy);
     RobotomyRequestForm &operator=(const RobotomyRequestForm &copy);
     RobotomyRequestForm(std::string target);
-    void beExecuted() const;
+    void execute(Bureaucrat const & executor) const;
 };
