@@ -6,7 +6,7 @@
 /*   By: mcharrad <mcharrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 11:09:53 by mcharrad          #+#    #+#             */
-/*   Updated: 2023/07/16 10:53:07 by mcharrad         ###   ########.fr       */
+/*   Updated: 2023/07/17 08:16:41 by mcharrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,4 +34,8 @@ int main()
 
 	if (!fuck)
 		std::cout << "the form existnt" << std::endl;
+
+	delete rrf; 
+	delete scf;
+	delete ppf;
 }

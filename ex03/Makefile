@@ -1,6 +1,6 @@
 CC = c++
 NAME = Intern
-FLAGS = -Wall -Werror -Wextra -std=c++98 
+FLAGS = -Wall -Werror -Wextra -std=c++98 -fsanitize=address -g
 FILES = main.cpp Bureaucrat.cpp AForm.cpp ShrubberyCreationForm.cpp RobotomyRequestForm.cpp PresidentialPardonForm.cpp Intern.cpp
 FILES_O = $(FILES:.cpp=.o)
 
